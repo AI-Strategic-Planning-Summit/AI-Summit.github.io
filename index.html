@@ -98,19 +98,18 @@
             Article Image
           </div>
           <div class="post-meta">
-            <h1 class="post-title" style="text-align: center">Invitation to Participate in a Visionary Symposium on Generative AI — Bali, Indonesia</h1>
+            <h1 class="post-title" style="text-align: center">A Visionary Symposium on Generative AI — Bali, Indonesia</h1>
             <div style="text-align: center; font-size: 20px">
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="nav_tag" itemprop="author" href="#introduction">Introduction | </a>
-              <a class="nav_tag" itemprop="author" href="#methodology">Methodology | </a>
-              <a class="nav_tag" itemprop="author" href="#datasets">Datasets | </a>
-              <a class="nav_tag" itemprop="author" href="#important-dates">Important Dates | </a>
-              <a class="nav_tag" itemprop="author" href="#organisers">Organisers</a>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+              <a class="nav_tag" itemprop="author" href="#introduction">Introduction | </a>
+              <a class="nav_tag" itemprop="author" href="#target">Traget | </a>
+              <a class="nav_tag" itemprop="author" href="#important-dates">Location | </a>
+              <a class="nav_tag" itemprop="author" href="#organisers">Sponsor</a>
             <h3 class="post-subtitle" style="padding-top: 20%">Looking for your participation!👏</h3>
               <div class="cf post-meta-text" >
               <!--<div class="author-image" style="background-image: url(/assets/images/THUIR_logo.png); padding-left: 30%">Blog Logo</div>-->
-              <h4 class="author-name" itemprop="author" itemscope itemtype="http://www.thuir.cn">THUIR</h4>
-              on
-              <time datetime="2024-03-22 00:00">22 March 2024</time>
+              <time datetime="2024-08-19 00:00">August 19th to 21st, 2024</time>
+              <h4 class="nav_tag" itemprop="author" >in Bali, Indonesia</h4>
 
               <!-- , tagged on <span class="post-tag-">, <a href="/tag/"></a></span> -->
             </div>
@@ -128,153 +127,47 @@
           <!--</div>-->
           <a name="topofpage"></a>
           <h1 id="introduction">Introduction</h1>
-<p>The Automatic Evaluation of LLMs (AEOLLM) task is a new core task in <a href="http://research.nii.ac.jp/ntcir/ntcir-18">NTCIR-18</a> to support in-depth research on large language models (LLMs) evaluation. As LLMs grow popular in both fields of academia and industry, how to effectively evaluate the capacity of LLMs becomes an increasingly critical but still challenging issue. Existing methods can be divided into two types: manual evaluation, which is expensive, and automatic evaluation, which faces many limitations including the task format (the majority belong to multiple-choice questions) and evaluation criteria (occupied by reference-based metrics). To advance the innovation of automatic evaluation, we proposed the Automatic Evaluation of LLMs (AEOLLM) task which focuses on generative tasks and encourages reference-free methods. Besides, we set up diverse subtasks such as summary generation, non-factoid question answering, text expansion, and dialogue generation to comprehensively test different methods. We believe that the AEOLLM task will facilitate the development of the LLMs community.</p>
-<h1 id="methodology">Methodology</h1>
-<img src="assets/images/method.svg" alt="" /><br />
-
-<ol>
-  <li>First, we choose four subtasks as shown in the table below:</li>
-  <table>
-    <thead>
-      <tr>
-        <th style="text-align: left">Task</th>
-        <th style="text-align: left">Description</th>
-        <th style="text-align: left">Dataset</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td style="text-align: left">Summary Generation (SG)</td>
-        <td style="text-align: left">write a summary for the specified text</td>
-        <td style="text-align: left">XSum: over 226k news articles</td>
-      </tr>
-      <tr>
-        <td style="text-align: left">Non-Factoid QA (NFQA)</td>
-        <td style="text-align: left">construct long-form answers to open-ended non-factoid questions</td>
-        <td style="text-align: left">NF_CATS: 12k non-factoid questions</td>
-      </tr>
-      <tr>
-        <td style="text-align: left">Text Expansion (TE)</td>
-        <td style="text-align: left">given a theme, participants need to generate stories related to the theme</td>
-        <td style="text-align: left">WritingPrompts: 303k story themes2</td>
-      </tr>
-      <tr>
-        <td style="text-align: left">Dialogue Generation (DG)</td>
-        <td style="text-align: left">generate human-like responses to numerous topics in daily conversation contexts</td>
-        <td style="text-align: left">DailyDialog: 13k daily conversation contexts</td>
-      </tr>
-    </tbody>
-  </table>
-  <li>Second, we choose a series of popular LLMs during the competition to generate answers.</li>
-  <li>Third, we manually annotate the answer sets for each question, which will be used as gold standards for evaluating the performance of different evaluation methods.</li>
-  <li>Last, we will collect evaluation results from participants and calculate consistency with manually annotated results. We will use Spearman correlation coefficient (S) and Kendall’s tau (τ ) as the evaluation metrics.</li>
-</ol>
-
-<h2 id="datasets">Datasets</h2>
+<p>
+Recent progress in Generative AI, notably the Large Language Models, has made significant impact on many relevant research communities, notably, Natural Language Processing, Information Retrieval, Computer Vision, Machine Learning, and AI in general, as is evident from the rapid increase of research papers on LLMs in all those communities in recent years. The disruptive impact raises many new pressing questions that the research communities need to address: 
+</p>
 <ul>
-  <li><strong>Summary Generation (SG): <a href="https://huggingface.co/datasets/EdinburghNLP/xsum">Xsum</a></strong>: A real-world single document news summary dataset collected from online articles by the British Broadcasting Corporation (BBC) and contains over 220 thousand news documents.</li>
-  <li><strong>Non-Factoid QA (NFQA): <a href="https://github.com/Lurunchik/NF-CATS">NF_CATS</a></strong>: A dataset contains exam_x0002_ples of 12k natural questions divided into eight categories.</li>
-  <li><strong>Text Expansion (TE): <a href="https://huggingface.co/datasets/euclaise/writingprompts">WritingPrompts</a></strong>: A large dataset of 300K human-written stories paired with writing prompts from an online forum.</li>
-  <li><strong>Dialogue Generation (DG): <a href="https://huggingface.co/datasets/daily_dialog">DailyDialog</a></strong>: A high-quality dataset of 13k multi-turn dialogues. The language is human-written and less noisy.</li>
+  <li>To what extent can/will LLMs replace more “traditional” approaches in all the areas/subareas of AI and their applications?</li>
+  <li>Do we anticipate a convergence of AI approaches to a unified foundation or framework (eventually)?</li>
+  <li>Given the emergence of interdisciplinary topics such as multimodality and intelligent agents, which are now being studied in multiple communities, is the boundary between different communities still clear or necessary? </li>
+  <li>Should the structure of our research communities and education curricula be re-examined to better align with the recent development and future trends of Generative AI? </li>
+</ul>
+<p>
+  These questions are broadly relevant to many research communities and thus should be discussed by involving experts from all those related research communities. To this end, we organize this visionary symposium to bring together a diverse group of distinguished experts in the highly relevant research communities that are likely impacted most by the recent progress in Generative AI to  analyze and understand the landscape of future research topics in Generative AI by  collectively 1) assessing the impact of Generative AI on the research problems, new opportunities, and future trajectory of research in those affected research communities, 2)  identifying major future interdisciplinary research topics that would benefit from collaboration between multiple research communities, and 3) examining the current boundaries between the existing research communities to assess their alignment with the anticipated future  landscape of (interdsiciplinary) research topics in Generative AI. 
+</p>
+
+<h2 id="target">Target</h2>
+<p>
+  The three-day symposium will feature a series of lightning talks, panel discussions, and working group discussions, designed to foster in-depth multi-faceted dialogue and networking among pioneers in the field. The symposium aims to culminate in the production of a forward-looking white paper co-authored by the symposium participants that will:
+</p>
+<ul>
+  <li><strong>Outline Future Research Directions: </strong>Provide a roadmap of the  emerging research opportunities and challenges, especially interdisciplinary ones,  in Generative AI, which will be useful for  guiding any revisions to  the Call for Papers of the major  conferences in multiple relevant research communities to better align with Generative AI  as well as suggesting new opportunities of interdisciplinary workshops that may be co-located with conferences in different communities..</li>
+  <li><strong>Educational Benchmarks: </strong>Recommend educational strategies and frameworks to prepare students and professionals for advanced AI research and applications in the era of Generative AI, which will be useful for guiding any revisions to the  curriculum design in the related areas/subareas of AI.</li>
+  <li><strong>Inspire Global AI Community: </strong>Inspire Global AI Community: Offer insights and recommendations to inspire and guide the global AI community towards sustainable, ethical, and collaborative innovation via strategic and prioritized resource allocations to accelerate AI research and applications globally.</li>
 </ul>
 
-<h2 id="important-dates">Important Dates</h2>
-<p><em>All deadlines are at 11:59pm in the Anywhere on Earth (AOE) timezone.</em><br />
-<span class="event"><strong>Kickoff Event</strong>:</span> <span class="date">👉March 29, 2024</span><br />
-<span class="event"><strong>Dataset Release</strong>:</span> <span class="date">May 1, 2024</span><br />
-<span class="event"><strong>System Output Submission Deadline</strong>:</span> <span class="date">Jan 15, 2025</span><br />
-<span class="event"><strong>Evaluation Results Release</strong>:</span> <span class="date">Feb 1, 2025</span>  <br />
-<span class="event"><strong>Task overview release (draft)</strong>:</span> <span class="date">Feb 1, 2025</span><br />
-<span class="event"><strong>Submission Due of Participant Papers (draft)</strong>:</span> <span class="date">March 1, 2025</span><br />
-<span class="event"><strong>Camera-Ready Participant Paper Due</strong>:</span> <span class="date">May 1, 2025</span><br />
-<span class="event"><strong>NTCIR-18 Conference</strong>:</span> <span class="date">Jun 10-13 2025</span><br />
+<h2 id="location">Location</h2>
+<p>
+The symposium venue is in the xx building of TSAC in Denpasar. Denpasar is  a gateway to the rich cultural tapestry and breathtaking natural beauty of Bali and   accessible from major cities around the world with an international airport. By combining professional enrichment with personal enjoyment, the Tsinghua Southeast Asia Center in Denpasar not only serves as a venue but also as a holistic experience that makes our symposium both intellectually stimulating and immensely enjoyable.The detailed agenda and additional information will be provided upon your acceptance of this invitation.
+</p>
 
-<h2 id="evaluation-measures">Evaluation Measures</h2>
-
-
-<h2 id="data-and-file-format">Data and File format</h2>
-
-
-<h2 id="submitting-runs">Submitting runs</h2>
-<p>TBA</p>
+<h2 id="sponsor">Sponsor</h2>
+<p>
+  The symposium is sponsored by the Tsinghua Southeast Asia Center (TSAC), situated in the vibrant city of Denpasar, the capital of Bali province. TSAC will cover all your local expenses associated with the event, including your hotel accommodation, local transportation, and meals. Participants are expected to pay for their international transportation to Bali. 
+</p>
 
 <h2 id="organisers">Organisers</h2>
 <p><em>Yiqun Liu</em> [yiqunliu@tsinghua.edu.cn] (Tsinghua University)<br />
 <em>Qingyao Ai</em> [aiqy@tsinghua.edu.cn] (Tsinghua University)<br />
-<em>Junjie Chen</em> [chenjj826@gmail.com] (Tsinghua University) <br />
-<em>Zhumin Chu</em> [chuzm19@mails.tsinghua.edu.cn] (Tsinghua University)<br />
-<em>Haitao Li</em> [liht22@mails.tsinghua.edu.cn] (Tsinghua University)</p>
-
-<!-- <p><br />Contact Email: <strong><em>session-search-org@googlegroups.com</em></strong><br /> -->
-<p>Please feel free to contact us! 😉</p>
-
-<h2 id="references">References</h2>
-<p>[1] Carterette, B., Kanoulas, E., Hall, M., &amp; Clough, P. (2014). Overview of the TREC 2014 session track. <a href="https://apps.dtic.mil/sti/pdfs/ADA618627.pdf">pdf</a><br />
-[2] Yang, G. H., &amp; Soboroff, I. (2016). TREC 2016 Dynamic Domain Track Overview. In TREC. <a href="http://infosense.cs.georgetown.edu/publication/80.pdf">pdf</a><br />
-[3] Zhang, F., Mao, J., Liu, Y., Ma, W., Zhang, M., &amp; Ma, S. (2020, July). Cascade or Recency: Constructing Better Evaluation Metrics for Session Search. In Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval (pp. 389-398). <a href="http://www.thuir.cn/group/~mzhang/publications/SIGIR2020-ZhangFan1.pdf">pdf</a><br />
-[4] Chen, J., Mao, J., Liu, Y., Zhang, M., &amp; Ma, S. (2019, November). TianGong-ST: A New Dataset with Large-scale Refined Real-world Web Search Sessions. In Proceedings of the 28th ACM International Conference on Information and Knowledge Management (pp. 2485-2488). <a href="http://www.thuir.cn/tiangong-st/CIKM19Chen.pdf">pdf</a><br />
-[5] Liu, M., Liu, Y., Mao, J., Luo, C., &amp; Ma, S. (2018, June). Towards designing better session search evaluation metrics. In The 41st International ACM SIGIR Conference on Research &amp; Development in Information Retrieval (pp. 1121-1124). <a href="http://www.thuir.org/group/~YQLiu/publications/SIGIR18-Liu.pdf">pdf</a></p>
-
-<hr />
-
-<h2 id="supported-by">Supported by</h2>
-<p><img src="assets/images/organizer.png" alt="" /></p>
-
-        </section>
-        <!--<footer class="post-footer">-->
-          <!--<section class="share">-->
-            <!---->
-              <!---->
-                <!--<a class="icon-twitter" href="http://twitter.com/share?text=NTCIR-16+Session+Search+%28SS%29+Task&amp;url=http://localhost:4000"-->
-                  <!--onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">-->
-                <!--<i class="fa fa-twitter"></i><span class="hidden">twitter</span>-->
-                <!--</a>-->
-              <!---->
-            <!---->
-              <!---->
-            <!---->
-          <!--</section>-->
-        <!--</footer>-->
-        <!--<div class="bottom-teaser cf">-->
-          <!--<div class="isLeft">-->
-            <!--<h5 class="index-headline featured"><span>Written by</span></h5>-->
-            <!--<section class="author">-->
-              <!--<div class="author-image" style="background-image: url(/assets/images/THUIR_logo.png)">Blog Logo</div>-->
-              <!--<h4>THUIR</h4>-->
-              <!--<p class="bio"></p>-->
-              <!--<hr>-->
-              <!--<p class="published">Published <time datetime="2021-05-31 00:00">31 May 2021</time></p>-->
-            <!--</section>-->
-          <!--</div>-->
-          <!---->
-          <!--<div class="isRight">-->
-            <!--<h5 class="index-headline featured"><span>Supported by</span></h5>-->
-            <!--<footer class="site-footer">-->
-              <!--<section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a></section>-->
-              <!--<a class="subscribe"> <span class="tooltip"> <i class="fa fa-rss"></i> Make IR research more interesting!</span></a>-->
-              <!--<div class="inner">-->
-                <!--<section class="copyright">All content copyright <a href="/">THUIR</a> &copy; 2021<br>All rights reserved.</section>-->
-              <!--</div>-->
-            <!--</footer>-->
-          <!--</div>-->
-        <!--</div>-->
-        
-      </article>
+    </article>
     </main>
-    <!--<div class="bottom-closer">-->
-      <!--<div class="background-closer-image"  style="background-image: url(/assets/images/tokyo-night-view-i82930.jpeg)">-->
-        <!--Image-->
-      <!--</div>-->
-      <!--<div class="inner">-->
-        <!--<h1 class="blog-title">NTCIR-18 Automatic Evaluation of LLMs (AEOLLM)</h1>-->
-        <!--<h2 class="blog-description">©️All Reights Reserved by THUIR 2021
-</h2>-->
-        <!--<a href=/ class="btn">Back to Overview</a>-->
-      <!--</div>-->
-    <!--</div>-->
     <footer class="main-footer">
         <div class="copyright">
-        <p style="font-family: 宋体">NTCIR-18 Automatic Evaluation of LLMs (AEOLLM) task © All Rights Reserved By THUIR (2024) </p>
+        <p style="font-family: 宋体">A Visionary Symposium on Generative AI — Bali, Indonesia</p>
         </div>
 </footer> <!-- End Footer -->
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
