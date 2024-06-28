@@ -33,10 +33,19 @@
 
   <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
   <link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+  <style>
+    .top-right {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        z-index: 1000; /* Ensure it is above other elements */
+    }
+</style>
 </head>
 
 
   <body itemscope itemtype="http://schema.org/Article">
+    <img src="/assets/images/logo.png" alt="Image Description" class="top-right">
     <!-- header start -->
 
 <!---->
@@ -80,7 +89,6 @@
 
     <main class="content" role="main">
       <article class="post">
-        
         <div class="article-image">
           <div class="post-image-image" style="background-image: url(assets/images/img.jpg);">
             Article Image
