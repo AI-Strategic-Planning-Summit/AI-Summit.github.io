@@ -197,7 +197,7 @@ body {
 
 .blog-header {
   width: 100%;
-  max-width: 640px;
+  max-width: 1000px;
   margin: 0 auto;
   position: relative;
   padding: 0;
@@ -254,7 +254,7 @@ body {
 
 .content {
   width: 100%;
-  max-width: 640px;
+  max-width: 1000px;
   margin: 0 auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -349,7 +349,7 @@ body {
   margin: 0 auto;
   padding: 48px 0;
   width: 100%;
-  max-width: 640px;
+  max-width: 1000px;
   font-size: 12px;
   text-align: center;
   color: #999;
@@ -689,7 +689,7 @@ body {
     width: 100%;
     position: relative;
     z-index: 99;
-    max-width: 640px;
+    max-width: 1000px;
     padding: 120px 0 90px;
     text-align: center;
     margin: 0 auto; }

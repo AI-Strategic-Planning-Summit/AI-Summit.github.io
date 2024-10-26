@@ -105,7 +105,7 @@
           <div class="post-meta">
             <h1 class="post-title" style="text-align: center">Future Landscape of AI Research: Influences from Generative AI</h1>
             <div style="text-align: center; font-size: 20px;">
-              <a href="#introduction" color="white" ><strong>Introduction2</strong> | </a>
+              <a href="#introduction" color="white" ><strong>Introduction</strong> | </a>
               <a href="#target" color="white"><strong>Target</strong> | </a>
               <a href="#location" color="white" ><strong>Location</strong> | </a>
               <a href="#schedule" color="white"><strong>Schedule</strong> | </a>
@@ -384,11 +384,9 @@ The symposium venue is in the <a href="https://sscm.tsea.asia/tsinghuasea/">Tsin
           .css('opacity', 1-Math.max(top/700, 0));
       });
       $window.trigger('scroll');
-      $('.content').css('width',  '90%');
       var height = $('.article-image').height();
       $('.post-content').css('padding-top', height + 'px');
 
-      $('.post-content').css('width', '90%').css('margin', '0 auto');
       $('a[href*=#]:not([href=#])').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
          && location.hostname == this.hostname) {
